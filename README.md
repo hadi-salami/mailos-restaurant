@@ -76,4 +76,17 @@ This project demonstrates a restaurant frontend and an interactive cart. Payment
 
 ## Screenshots
 
-Screenshots of the desktop and mobile layouts will be added after deployment.
+### Home
+![Home page](doc/screenshots/home-desktop.png)
+
+### Menu
+![Menu with dishes and Add to Cart buttons](doc/screenshots/menu-desktop.png)
+
+### About
+![About page and restaurant story](doc/screenshots/about-desktop.png)
+
+### Contact
+![Contact information and message form](doc/screenshots/contact-desktop.png)
+
+### Cart
+![Cart with quantities and order total](doc/screenshots/cart-desktop.png)
