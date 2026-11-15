@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Mailos - Restaurant Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mailos is a restaurant website built with React for the Advanced Web Programming project. Visitors can explore the pasta menu, learn about the restaurant, view contact information and prepare an order using an interactive shopping cart.
 
-## Available Scripts
+## Pages
 
-In the project directory, you can run:
+- **Home:** Restaurant introduction and featured dishes.
+- **Menu:** Available dishes with images, descriptions, prices and Add to Cart buttons.
+- **About:** Information about the restaurant.
+- **Contact:** Location, opening hours, contact details and a contact form.
+- **Cart:** Selected dishes, quantity controls and the order total.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Display dishes using reusable React components.
+- Add dishes from the menu to the cart.
+- Increase and decrease item quantities.
+- Remove individual dishes.
+- Clear the entire cart.
+- Calculate the total quantity and price automatically.
+- Display a message when the cart is empty.
+- Navigate between pages using React Router.
+- Adapt layouts using CSS media queries.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+- React
+- React Router
+- JavaScript and JSX
+- CSS
+- Create React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running the Project Locally
 
-### `npm run build`
+1. Clone or download this repository.
+2. Open a terminal inside the project folder.
+3. Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+5. Open http://localhost:3000 in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Production Build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The production files are generated inside the `build` folder.
 
-## Learn More
+## Cart Behavior
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The cart uses React state shared between the Menu and Cart pages through props.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Adding an existing dish increases its quantity. Decreasing its quantity to zero removes it from the cart.
 
-### Code Splitting
+The cart is stored in memory. Refreshing the page resets it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Scope
 
-### Analyzing the Bundle Size
+This project demonstrates a restaurant frontend and an interactive cart. Payment processing and backend order submission are outside its current scope.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Live Website
 
-### Making a Progressive Web App
+The deployment link will be added after publishing the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Screenshots
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Screenshots of the desktop and mobile layouts will be added after deployment.

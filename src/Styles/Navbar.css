@@ -1,0 +1,145 @@
+#nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: transparent;
+}
+
+#nav-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+/* Logo and Mailos name */
+#nav-bar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #F5EAD9;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+}
+
+#nav-bar .navbar-brand:hover {
+  color: #F5EAD9;
+}
+
+#nav-bar .navbar-brand img {
+  height: 90px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation links */
+#nav-bar .navbar-nav {
+  gap: 2.5rem;
+}
+
+#nav-bar .nav-link {
+  color: #F5EAD9;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#nav-bar .nav-link:hover {
+  color: #B23A2E;
+}
+
+/* Burger button */
+#nav-bar .navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+#nav-bar .burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  transform: scale(0.8);
+}
+
+#nav-bar .burger input {
+  display: none;
+}
+
+#nav-bar .burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #F5EAD9;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-bar .burger span:nth-of-type(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+#nav-bar .burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+#nav-bar .burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+#nav-bar .navbar-toggler[aria-expanded="true"] .burger span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0;
+  left: 5px;
+}
+
+#nav-bar .navbar-toggler[aria-expanded="true"] .burger span:nth-of-type(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#nav-bar .navbar-toggler[aria-expanded="true"] .burger span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+/* Mobile dropdown */
+@media (max-width: 991.98px) {
+  #nav-bar .container {
+    padding: 1.25rem;
+  }
+
+  #nav-bar .navbar-brand img {
+    height: 45px;
+  }
+
+  #nav-bar .navbar-collapse {
+    background: rgba(20, 8, 6, 0.96);
+    padding: 1.5rem;
+  }
+
+  #nav-bar .navbar-nav {
+    gap: 1rem;
+  }
+
+  #nav-bar .nav-link {
+    font-size: 1.4rem;
+  }
+}

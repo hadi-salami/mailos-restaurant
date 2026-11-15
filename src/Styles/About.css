@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins:wght@400;500;600&display=swap");
+
+/* About page */
+.about-page {
+  background-color: #f9f6f0;
+  color: #260800;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero */
+.about-page .about-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 170px 8vw 60px;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../images/contact-hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-page .hero-tag {
+  color: #f5ead9;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.about-page .about-title {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #f5ead9;
+  margin: 0;
+}
+
+.about-page em {
+  font-style: normal;
+}
+
+/* Small section labels */
+.about-page .section-label {
+  display: inline-block;
+  color: #a52c25;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Story section */
+.about-page .about-origin-section {
+  background-color: #f9f6f0;
+}
+
+.about-page .about-origin {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.about-page .about-origin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.about-page .about-text h2 {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 20px 0 28px;
+}
+
+.about-page .about-text p {
+  color: #49352e;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-page .about-img-wrap img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+/* Values section */
+.about-page .about-values {
+  background-color: #260800;
+  color: #f5ead9;
+  padding: 90px 0;
+}
+
+.about-page .about-values .section-label {
+  color: #e6b8a2;
+}
+
+.about-page .about-values h2 {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 16px 0 45px;
+}
+
+.about-page .values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.about-page .value-card {
+  border: 1px solid rgba(245, 234, 217, 0.2);
+  padding: 30px 24px;
+  transition: border-color 0.25s ease;
+}
+
+.about-page .value-card:hover {
+  border-color: #e6b8a2;
+}
+
+.about-page .value-number {
+  display: block;
+  color: #e6b8a2;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.about-page .value-card h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.about-page .value-card p {
+  color: #d0b8ae;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Team section */
+.about-page .about-team {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.about-page .about-team h2 {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 16px 0 45px;
+}
+
+.about-page .team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.about-page .team-img {
+  overflow: hidden;
+}
+
+.about-page .team-img img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  filter: grayscale(30%);
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
+}
+
+.about-page .team-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.about-page .team-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 22px 0 8px;
+}
+
+.about-page .team-card > span {
+  color: #a52c25;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .about-page .about-origin-grid {
+    gap: 35px;
+  }
+
+  .about-page .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-page .team-grid {
+    gap: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .about-page .about-hero {
+    min-height: 420px;
+    padding: 140px 24px 45px;
+  }
+
+  .about-page .about-title {
+    font-size: 4.5rem;
+  }
+
+  .about-page .about-origin,
+  .about-page .about-team {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .about-page .about-origin-grid,
+  .about-page .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .about-text h2,
+  .about-page .about-values h2,
+  .about-page .about-team h2 {
+    font-size: 3rem;
+  }
+
+  .about-page .about-img-wrap img {
+    height: 350px;
+  }
+
+  .about-page .about-values {
+    padding: 55px 0;
+  }
+
+  .about-page .team-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

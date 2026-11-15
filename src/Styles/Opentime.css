@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap");
+
+.opening-time {
+  background-color: #350d10;
+  color: #f5ead9;
+  text-align: center;
+  padding: 90px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.opening-time-label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.opening-time h2 {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+.opening-time-hours {
+  color: #dfc6bd;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.opening-time-link {
+  display: inline-block;
+  background-color: #d81f2a;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.opening-time-link:hover {
+  background-color: #b4171f;
+  color: #ffffff;
+}
+
+.opening-time-link:focus-visible {
+  outline: 2px solid #f5ead9;
+  outline-offset: 4px;
+}
+
+@media (max-width: 520px) {
+  .opening-time {
+    padding: 60px 20px;
+  }
+
+  .opening-time h2 {
+    font-size: 2.5rem;
+  }
+}
