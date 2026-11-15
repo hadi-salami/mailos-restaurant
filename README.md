@@ -90,3 +90,10 @@ This project demonstrates a restaurant frontend and an interactive cart. Payment
 
 ### Cart
 ![Cart with quantities and order total](doc/screenshots/cart-desktop.png)
+
+
+### Mobile Menu
+![Menu on mobile](doc/screenshots/menu-mobile.png)
+
+### Mobile Cart
+![Cart on mobile](doc/screenshots/cart-mobile.png)
