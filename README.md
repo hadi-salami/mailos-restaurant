@@ -72,7 +72,7 @@ This project demonstrates a restaurant frontend and an interactive cart. Payment
 
 ## Live Website
 
-The deployment link will be added after publishing the website.
+[View Mailos](https://mailos-restaurant-zoeq.vercel.app/)
 
 ## Screenshots
 

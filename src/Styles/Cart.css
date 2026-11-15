@@ -456,6 +456,12 @@
 }
 
 @media (max-width: 600px) {
+  .cart-page .cart-hero h1{
+    display: none;
+  }
+  .cart-page .cart-hero p{
+    margin-top: 60px;
+  }
   .cart-page .cart-hero .cart-container {
     width: calc(100% - 32px);
     margin: 0 16px;
